@@ -4,9 +4,10 @@
     justify-content: center;
     background-color: $color-background-medium;
     color: $color-darker;
-    font-size: x-large;
+    font-size: large;
     padding: 20px 0;
     box-shadow: 0px 5px 5px 0px #cfcfcf inset;
+    margin-bottom: 0;
 }
 
 .search_localisation {
@@ -17,7 +18,7 @@
         width: 85%;
         border: none;
         background-color: unset;
-        font-size: x-large;
+        font-size: large;
         font-weight: 600;
     }
 }
