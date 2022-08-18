@@ -5,7 +5,7 @@
         height: 50px;
         background: $color-primary;
         background: linear-gradient(175deg, $color-secondary 10%, $color-primary 100%);
-        border: none;
         color: white;
+        @include btn($btn-margin: $margin-btn-gradient, $btn-height: $btn-gradient);
     }
 }

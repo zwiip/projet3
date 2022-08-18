@@ -1,3 +1,5 @@
+/*  Palette de couleurs  */
+/* hauteurs et margin boutons */
 *, *:before, *:after {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -17,8 +19,11 @@ body {
   height: 50px;
   background: #9356DC;
   background: linear-gradient(175deg, #FF79DA 10%, #9356DC 100%);
-  border: none;
   color: white;
+  border: none;
+  margin-bottom: 58px;
+  height: 50px;
+  box-shadow: 6px 4px 10px lightgray;
 }
 
 .logo {

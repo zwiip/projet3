@@ -1,0 +1,10 @@
+@mixin btn($btn-margin: $margin-btn-select, $btn-height: btn-select) {
+    border: none;
+    margin-bottom: $btn-margin;
+    height: $btn-height;
+    @if (height) == $btn-select {
+        box-shadow: 6px 4px 10px lightgray, -1px -1px 5px lightgray;
+    }@else{
+        box-shadow: 6px 4px 10px lightgray;
+    }
+}
