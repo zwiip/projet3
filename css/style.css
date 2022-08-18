@@ -14,16 +14,26 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.btn_gradient {
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.btn-gradient {
   border-radius: 50px;
   height: 50px;
   background: #9356DC;
-  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 100%);
+  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 80%);
   color: white;
   border: none;
   margin-bottom: 58px;
   height: 50px;
   box-shadow: 6px 4px 10px lightgray;
+}
+.btn-gradient:hover {
+  background: #965add;
+  background: #ff7edb;
+  box-shadow: 6px 4px 10px #a0a0a0;
 }
 
 .logo {
@@ -80,6 +90,41 @@ body {
 .presentation p {
   font-size: large;
   color: #353535;
+}
+
+.restaurants {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
+.restaurants a {
+  width: 100%;
+}
+
+.btn-card {
+  border: none;
+  margin-bottom: 18px;
+  height: 252px;
+  box-shadow: 6px 4px 10px lightgray;
+  width: 100%;
+}
+.btn-card_img {
+  width: 100%;
+  overflow: hidden;
+  height: 174px;
+}
+.btn-card_img img {
+  width: 100%;
+  object-fit: cover;
+}
+.btn-card_img p {
+  display: none;
+}
+
+.label-new p {
+  display: contents;
+  background-color: #99E2D0;
+  color: #4acbab;
 }
 
 /*# sourceMappingURL=style.css.map */
