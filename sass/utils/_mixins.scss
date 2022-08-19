@@ -6,5 +6,13 @@
         box-shadow: 6px 4px 10px lightgray, -1px -1px 5px lightgray;
     }@else{
         box-shadow: 6px 4px 10px lightgray;
+    }   
+}
+
+@mixin hover {
+    @if (height) == $btn-select {
+        box-shadow: 6px 4px 10px darken($color: lightgray, $amount: 20%), -1px -1px 5px darken($color: lightgray, $amount: 20%);
+    }@else{
+        box-shadow: 6px 4px 10px darken($color: lightgray, $amount: 20%);
     }
 }

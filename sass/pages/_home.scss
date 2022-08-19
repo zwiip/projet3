@@ -1,13 +1,17 @@
+section {
+    padding: 40px 6% 50px 6%;
+}
+
 .presentation {
     background-color: $color-background-light;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-bottom: 20px;
-    > * {
-        width: 70%;
+    * {
+        max-width: 80%;
     }
+    
     &_title {
         font-family: 'Roboto';
         font-size: xx-large;
@@ -20,34 +24,7 @@
 }
 
 .restaurants {
-    width: 90%;
     display: flex;
     flex-direction: column;
-    a {
-        width: 100%;
-    }
-}
-
-.btn-card {
-    @include btn($btn-margin: $margin-btn-card, $btn-height: $btn-card);
-    width: 100%;
-    &_img {
-        width: 100%;
-        overflow: hidden;
-        height: 174px;
-        img {
-           width: 100%;
-           object-fit: cover;
-        }
-    }
-
-    &_img p {
-        display: none;
-    }
-}
-
-.label-new p {
-    display: contents;
-    background-color: $color-tertiary;
-    color: darken($color: $color-tertiary, $amount: 20%);
+    background-color: $color-background-light;
 }
