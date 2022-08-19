@@ -76,29 +76,39 @@ a {
 }
 .btn-card {
   border: none;
-  margin-bottom: 18px;
-  height: 260px;
+  margin-bottom: 25px;
+  height: 280px;
   box-shadow: 6px 4px 10px lightgray;
-  width: 100%;
   border-radius: 20px;
 }
 .btn-card_img {
-  width: 100%;
   overflow: hidden;
-  height: 174px;
+  height: 70%;
   border-radius: 20px 20px 0 0;
+  z-index: 1;
+  position: relative;
+  /*p {
+      display: none;
+  }*/
 }
 .btn-card_img img {
   width: 100%;
   object-fit: cover;
+  z-index: 2;
 }
-.btn-card_img p {
-  display: none;
-}
-.btn-card_img_label-new p {
-  display: contents;
+.btn-card_img_label {
+  position: absolute;
+  right: 4%;
+  top: 15px;
+  z-index: 3;
+  line-height: 0;
   background-color: #99E2D0;
-  color: #4acbab;
+  padding: 0 15px;
+  height: 30px;
+  border-radius: 2px;
+  color: #278870;
+  font-weight: 600;
+  box-shadow: 0px 1px 2px lightgray;
 }
 .btn-card_description {
   display: flex;

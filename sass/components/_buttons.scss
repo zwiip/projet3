@@ -43,7 +43,6 @@
             left: 60px;
         }
 
-
         &:hover {
             @include hover;
             background-color: $color-background-selected;
@@ -55,25 +54,35 @@
 
     &-card {
         @include btn($btn-margin: $margin-btn-card, $btn-height: $btn-card);
-        width: 100%;
         border-radius: 20px;
         &_img {
-            width: 100%;
             overflow: hidden;
-            height: 174px;
+            height: 70%;
             border-radius: 20px 20px 0 0;
+            z-index: 1;
+            position: relative;
         
             img {
                width: 100%;
                object-fit: cover;
+               z-index: 2;
             }
-            p {
+            /*p {
                 display: none;
-            }
-            &_label-new p {
-                display: contents;
+            }*/
+            &_label {
+                position: absolute;
+                right: 4%;
+                top: 15px;
+                z-index: 3;
+                line-height: 0;
                 background-color: $color-tertiary;
-                color: darken($color: $color-tertiary, $amount: 20%);
+                padding: 0 15px;
+                height: 30px;
+                border-radius: 2px;
+                color: darken($color: $color-tertiary, $amount: 40%);
+                font-weight: 600;
+                box-shadow: 0px 1px 2px lightgray;
             }
         }
         &_description {
