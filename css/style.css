@@ -19,6 +19,10 @@ a {
   color: unset;
 }
 
+li {
+  list-style-type: none;
+}
+
 .btn-gradient {
   border-radius: 50px;
   height: 50px;
@@ -156,6 +160,23 @@ a {
   background-color: unset;
   font-size: large;
   font-weight: 600;
+}
+
+footer {
+  color: white;
+  background-color: #353535;
+  padding: 2% 6%;
+}
+footer h2 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 500;
+}
+footer ul {
+  padding-inline-start: 0;
+  line-height: 1.6;
+}
+footer i {
+  margin-right: 10px;
 }
 
 section {
