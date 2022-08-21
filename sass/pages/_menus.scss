@@ -1,0 +1,52 @@
+.logo {
+    i {
+        font-size: xx-large;
+        position: absolute;
+        left: 40px;
+    }
+}
+
+.menus-cover {
+    height: 420px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    &_img {
+        overflow: hidden;
+        height: 350px;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    &_title {
+        border-radius: 45px 45px 0 0;
+        background-color: $color-background-light;
+        width: 100%;
+        position: absolute;
+        bottom: 25px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 4% 4% 0 4%;
+        margin-bottom: 0;
+
+        i {
+            font-size: xx-large;
+        }
+    }
+}
+
+.menus {
+    background-color: $color-background-light;
+    &_title {
+        h2 {
+            margin-bottom: 10px;
+        }
+        &_line {
+            background-color: $color-tertiary;
+            width: 50px;
+            height: 3px;
+        }
+    }
+}

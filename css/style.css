@@ -6,6 +6,10 @@
   -moz-box-sizing: border-box;
 }
 
+section {
+  padding: 40px 6% 50px 6%;
+}
+
 h1 {
   font-family: "Shrikhand", cursive;
 }
@@ -179,10 +183,6 @@ footer i {
   margin-right: 10px;
 }
 
-section {
-  padding: 40px 6% 50px 6%;
-}
-
 .presentation {
   background-color: #f6f6f6;
   display: flex;
@@ -207,6 +207,54 @@ section {
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
+}
+
+.logo i {
+  font-size: xx-large;
+  position: absolute;
+  left: 40px;
+}
+
+.menus-cover {
+  height: 420px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.menus-cover_img {
+  overflow: hidden;
+  height: 350px;
+}
+.menus-cover_img img {
+  width: 100%;
+  object-fit: cover;
+}
+.menus-cover_title {
+  border-radius: 45px 45px 0 0;
+  background-color: #f6f6f6;
+  width: 100%;
+  position: absolute;
+  bottom: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4% 4% 0 4%;
+  margin-bottom: 0;
+}
+.menus-cover_title i {
+  font-size: xx-large;
+}
+
+.menus {
+  background-color: #f6f6f6;
+}
+.menus_title h2 {
+  margin-bottom: 10px;
+}
+.menus_title_line {
+  background-color: #99E2D0;
+  width: 50px;
+  height: 3px;
 }
 
 /*# sourceMappingURL=style.css.map */
