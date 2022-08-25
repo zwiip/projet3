@@ -32,8 +32,8 @@ li {
   height: 50px;
   padding-left: 7%;
   padding-right: 7%;
-  background: #9356DC;
-  background: linear-gradient(175deg, #FF79DA 10%, #9356DC 80%);
+  /*        background: $color-primary; */
+  background: linear-gradient(175deg, #FF79DA, #9356DC);
   color: white;
   border: none;
   margin-bottom: 10px;
@@ -42,8 +42,7 @@ li {
 }
 .btn-gradient:hover {
   box-shadow: 6px 4px 10px #a0a0a0;
-  background: #965add;
-  background: #ff7edb;
+  background: linear-gradient(175deg, #ff88de, #9b63df);
 }
 .btn-select-presentation {
   border: none;
@@ -77,7 +76,7 @@ li {
 }
 .btn-select-presentation:hover {
   box-shadow: 6px 4px 10px #a0a0a0;
-  background-color: #f5edff;
+  background-color: #ebdaff;
 }
 .btn-select-presentation:hover i {
   color: #9356DC;

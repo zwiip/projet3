@@ -5,14 +5,13 @@
         height: 50px;
         padding-left: 7%;
         padding-right: 7%;
-        background: $color-primary;
-        background: linear-gradient(175deg, $color-secondary 10%, $color-primary 80%);
+/*        background: $color-primary; */
+        background: linear-gradient(175deg, $color-secondary, $color-primary);
         color: white;
         @include btn($btn-margin: $margin-btn-gradient, $btn-height: $btn-gradient);
         &:hover {
             @include hover;
-            background: lighten(($color-primary), 1%);
-            background: lighten(($color-secondary), 1%);
+            background: linear-gradient(175deg, lighten($color-secondary, 3), lighten($color-primary, 3));
         }
     }
 
