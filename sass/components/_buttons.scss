@@ -5,15 +5,33 @@
         height: 50px;
         padding-left: 7%;
         padding-right: 7%;
-/*        background: $color-primary; */
         background: linear-gradient(175deg, $color-secondary, $color-primary);
         color: white;
+        position: relative;
+        z-index: 1;
         @include btn($btn-margin: $margin-btn-gradient, $btn-height: $btn-gradient);
         &:hover {
             @include hover;
+            &::after {
+                opacity: 1;
+            }
+        }
+        &::after {
+            content: "";
+            border-radius: 50px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
             background: linear-gradient(175deg, lighten($color-secondary, 3), lighten($color-primary, 3));
+            opacity: 0;
+            z-index: -1;
+            transition: opacity 250ms;
         }
     }
+
+
 
     &-select-presentation {
         @include btn($btn-margin: $margin-btn-select-presentation, $btn-height: $btn-select);
