@@ -31,8 +31,6 @@
         }
     }
 
-
-
     &-select-presentation {
         @include btn($btn-margin: $margin-btn-select-presentation, $btn-height: $btn-select);
         display: flex;
@@ -114,8 +112,6 @@
                 margin-top: 0;
             }
         }
-
-
     }
     
 }

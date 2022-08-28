@@ -1,0 +1,27 @@
+.heart {
+    width: 32px;
+    height: 32px;;
+    position: relative;
+    display: flex;
+    align-items: center;
+    i {
+        font-size: xx-large;
+        position: absolute;
+    }
+    &_empty {
+        z-index: 1;
+    }
+
+    &_full {
+        z-index: 2;
+        background: linear-gradient($color-primary, $color-secondary);
+        overflow: hidden;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        height: 0;
+        transition: transform 1s;
+    }
+    &:hover + .heart_full {
+        transform: scale(2);
+    }
+}
