@@ -18,10 +18,18 @@
         overflow: hidden;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        height: 0;
-        transition: transform 1s;
+        background-size: 0;
+        &:hover {
+            animation: heart 2000ms ease-in backwards;
+        }
+    }  
+}
+
+@keyframes heart {
+    0% {
+        background-size: 0%;
     }
-    &:hover + .heart_full {
-        transform: scale(2);
+    100% {
+        background-size: 100%;
     }
 }
