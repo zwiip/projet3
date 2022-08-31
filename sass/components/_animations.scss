@@ -22,7 +22,7 @@
         transform-origin: bottom;
         opacity: 0;
         &:hover {
-            animation: heart 500ms ease-in forwards;
+            animation: heart 500ms 0s ease-in forwards;
         }
     }  
 }
@@ -35,5 +35,17 @@
     100% {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+@keyframes btn_choice {
+    0% {
+        opacity: 0;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(-20px);
     }
 }
