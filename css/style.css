@@ -1,5 +1,53 @@
 /*  Palette de couleurs  */
 /* hauteurs et margin boutons */
+.delay-1 {
+  animation: btn_choice 1400ms 100ms ease-in both;
+}
+
+.delay-2 {
+  animation: btn_choice 1400ms 200ms ease-in both;
+}
+
+.delay-3 {
+  animation: btn_choice 1400ms 300ms ease-in both;
+}
+
+.delay-4 {
+  animation: btn_choice 1400ms 400ms ease-in both;
+}
+
+.delay-5 {
+  animation: btn_choice 1400ms 500ms ease-in both;
+}
+
+.delay-6 {
+  animation: btn_choice 1400ms 600ms ease-in both;
+}
+
+.delay-7 {
+  animation: btn_choice 1400ms 700ms ease-in both;
+}
+
+.delay-8 {
+  animation: btn_choice 1400ms 800ms ease-in both;
+}
+
+.delay-9 {
+  animation: btn_choice 1400ms 900ms ease-in both;
+}
+
+.delay-10 {
+  animation: btn_choice 1400ms 1000ms ease-in both;
+}
+
+.delay-11 {
+  animation: btn_choice 1400ms 1100ms ease-in both;
+}
+
+.delay-12 {
+  animation: btn_choice 1400ms 1200ms ease-in both;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -153,8 +201,6 @@ li {
   background-color: white;
   border-radius: 20px;
   padding: 1% 4%;
-  animation: btn_choice 600ms ease-in backwards;
-  bottom: 20px;
 }
 .btn_choice h3 {
   margin-bottom: 0;
@@ -352,7 +398,7 @@ main {
 }
 .menus_title h2:first-of-type {
   padding-top: 0;
-  margin-top: 0;
+  margin-top: 10;
 }
 .menus_title_line {
   background-color: #99E2D0;

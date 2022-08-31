@@ -17,4 +17,8 @@
     }
 }
 
-$menu_delay: () 
+@for $i from 1 to 13 {
+   .delay-#{$i} {
+    animation: btn_choice 1400ms ($i * 100ms) ease-in both;
+   }
+}
