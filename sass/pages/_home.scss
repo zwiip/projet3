@@ -28,3 +28,7 @@
     flex-direction: column;
     background-color: $color-background-light;
 }
+
+.header_home, .main_home, .footer_home {
+    animation: loader 200ms 2800ms 1 reverse both;
+}
