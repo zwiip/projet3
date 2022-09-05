@@ -279,8 +279,13 @@ li {
 @keyframes loader {
   0% {
     opacity: 1;
+    z-index: 20;
+  }
+  99% {
+    z-index: 20;
   }
   100% {
+    z-index: -2;
     opacity: 0;
   }
 }
@@ -382,7 +387,6 @@ footer i {
 
 .loader {
   position: absolute;
-  z-index: 20;
   background-color: white;
   display: flex;
   justify-content: center;
