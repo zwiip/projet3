@@ -12,12 +12,13 @@
 @mixin hover {
     @if (height) == $btn-select {
         box-shadow: 6px 4px 10px darken($color: lightgray, $amount: 20%), -1px -1px 5px darken($color: lightgray, $amount: 20%);
-    }@else{
+    }
+    @else{
         box-shadow: 6px 4px 10px darken($color: lightgray, $amount: 20%);
     }
 }
 
-@for $i from 1 to 13 {
+@for $i from 1 to 14 {
    .delay-#{$i} {
     animation: btn_choice 1400ms ($i * 100ms) ease-in both;
    }

@@ -43,8 +43,7 @@ main {
 
 .menus {
     padding-top: 0px;
-    height: 420px;
-    overflow: hidden;
+    padding-bottom: 15px;
     &_title {
         h2 {
             &:first-of-type {

@@ -48,6 +48,10 @@
   animation: btn_choice 1400ms 1200ms ease-in both;
 }
 
+.delay-13 {
+  animation: btn_choice 1400ms 1300ms ease-in both;
+}
+
 *, *:before, *:after {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -159,9 +163,6 @@ li {
   border-radius: 20px 20px 0 0;
   z-index: 1;
   position: relative;
-  /*p {
-      display: none;
-  }*/
 }
 .btn-card_img img {
   width: 100%;
@@ -548,8 +549,7 @@ main {
 
 .menus {
   padding-top: 0px;
-  height: 420px;
-  overflow: hidden;
+  padding-bottom: 15px;
 }
 .menus_title h2 {
   margin-bottom: 10px;
