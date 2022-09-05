@@ -117,21 +117,63 @@
     &_choice {
         @include btn;
         background-color: white;
+        height: 85px;
         border-radius: 20px;
         padding: 1% 4%;
-        
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        &_container {
+            width: 100%;
+            height: 100%;
+            transform-origin: left;
+        }
+        &_selected {
+            position: absolute;
+            right: -20%;
+            top: 0;
+            height: 100%;
+            width: 18%;
+            background-color: $color-tertiary;
+            border-radius: 0 20px 20px 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            i {
+                color: white;
+                font-size: x-large;
+            }
+        }
         h3 {
             margin-bottom: 0;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
         }
         &_txt {
             display: flex;
             justify-content: space-between;
+            :first-child {
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
             p {
                 margin-top: 8px;
             }
         }
         &_price {
             font-weight: 800;
+        }
+        &:hover .btn_choice_selected {
+            animation: selected 330ms both;
+        }
+        &:hover .btn_choice_selected i {
+            animation: check 400ms ease-out 100ms 1 both;
+        }
+
+        &:hover .btn_choice_container {
+            animation: container-shrink 300ms both;
         }
     }
 }
