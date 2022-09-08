@@ -157,9 +157,20 @@ li {
   box-shadow: 6px 4px 10px lightgray;
   border-radius: 20px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .btn-card {
+    margin: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .btn-card {
+    margin: 10px;
+    max-height: 240px;
+  }
+}
 .btn-card_img {
   overflow: hidden;
-  height: 70%;
+  height: 68%;
   border-radius: 20px 20px 0 0;
   z-index: 1;
   position: relative;
@@ -478,6 +489,20 @@ footer i {
   flex-direction: column;
   background-color: #f6f6f6;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .restaurants_container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .restaurants_container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 100%;
+  }
+}
 
 .heart {
   width: 32px;
@@ -485,6 +510,9 @@ footer i {
   position: relative;
   display: flex;
   align-items: center;
+}
+.heart:hover .heart_full {
+  animation: heart 500ms 0s ease-in forwards;
 }
 .heart i {
   font-size: xx-large;
@@ -502,9 +530,6 @@ footer i {
   background-repeat: no-repeat;
   transform-origin: bottom;
   opacity: 0;
-}
-.heart_full:hover {
-  animation: heart 500ms 0s ease-in forwards;
 }
 
 .header_home, .main_home, .footer_home {

@@ -15,3 +15,9 @@ $margin-btn-gradient: 10px;
 $margin-btn-select: 14px;
 $margin-btn-card: 25px;
 $margin-btn-select-presentation: 26px;
+
+$breakpoints: (
+    tablet-min: 768px,
+    tablet-max: 1199px,
+    desktop: 1200px
+);

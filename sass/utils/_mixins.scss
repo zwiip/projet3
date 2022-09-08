@@ -23,3 +23,15 @@
     animation: btn_choice 1400ms ($i * 100ms) ease-in both;
    }
 }
+
+@mixin tablet {
+    @media screen and (min-width: map-get($breakpoints, tablet-min)) and (max-width: map-get($breakpoints, tablet-max)) {       
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media screen and (min-width: map-get($breakpoints, desktop)) {
+        @content;
+    }
+}

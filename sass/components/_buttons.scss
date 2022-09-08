@@ -71,9 +71,17 @@
     &-card {
         @include btn($btn-margin: $margin-btn-card, $btn-height: $btn-card);
         border-radius: 20px;
+        @include tablet {
+            margin: 10px;
+        }
+        @include desktop {
+            margin: 10px;
+            max-height: 240px;
+        }
+        
         &_img {
             overflow: hidden;
-            height: 70%;
+            height: 68%;
             border-radius: 20px 20px 0 0;
             z-index: 1;
             position: relative;

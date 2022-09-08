@@ -91,6 +91,18 @@
     display: flex;
     flex-direction: column;
     background-color: $color-background-light;
+    &_container {
+        @include tablet {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+        }
+        @include desktop {
+            display: grid;
+            grid-template-columns: 25% 25% 25% 25%;
+            grid-template-rows: 100%;
+        }
+    }
 }
 
 .heart {
@@ -99,6 +111,9 @@
     position: relative;
     display: flex;
     align-items: center;
+    &:hover .heart_full {
+        animation: heart 500ms 0s ease-in forwards;
+    }
     i {
         font-size: xx-large;
         position: absolute;
@@ -116,10 +131,7 @@
         background-repeat: no-repeat;
         transform-origin: bottom;
         opacity: 0;
-        &:hover {
-            animation: heart 500ms 0s ease-in forwards;
-        }
-    }  
+    } 
 }
 
 .header_home, .main_home, .footer_home {
