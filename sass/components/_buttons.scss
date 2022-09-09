@@ -41,6 +41,10 @@
         font-weight: 600;
         font-size: large;
         margin-left: 15px;
+        @include tablet {
+            height: 100px;
+            align-items: flex-end;
+        }
         &_number {
             position: absolute;
             display: flex;
@@ -52,11 +56,29 @@
             width: 30px;
             height: 30px;
             border-radius: 50px;
+            @include tablet {
+                width: 40px;
+                height: 40px;
+                top: -10px;
+            }
+            @include desktop {
+                width: 40px;
+                height: 40px;
+            }
         }
         i {
             color: gray;
             position: absolute;
-            left: 60px;
+            left: 12%;
+            text-align: center;
+            @include tablet {
+                left: 45%;
+                top: 15%;
+                font-size: xx-large;
+            }
+            @include desktop {
+                font-size: x-large;
+            }
         }
 
         &:hover {

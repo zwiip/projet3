@@ -83,8 +83,22 @@
     }
 }
 
-.fontionnement {
+.fonctionnement {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    &_container {
+        @include tablet {
+            display: grid;
+            grid-template-columns: repeat(3,33%);
+            grid-template-rows: 1fr;
+        }
+        @include desktop {
+            display: grid;
+            grid-template-columns: repeat(3,33%);
+            grid-template-rows: 1fr;
+        }
+    }
 }
 
 .restaurants {
@@ -103,35 +117,6 @@
             grid-template-rows: 100%;
         }
     }
-}
-
-.heart {
-    width: 32px;
-    height: 32px;;
-    position: relative;
-    display: flex;
-    align-items: center;
-    &:hover .heart_full {
-        animation: heart 500ms 0s ease-in forwards;
-    }
-    i {
-        font-size: xx-large;
-        position: absolute;
-    }
-    &_empty {
-        z-index: 1;
-    }
-
-    &_full {
-        z-index: 2;
-        background: linear-gradient($color-primary, $color-secondary);
-        overflow: hidden;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-repeat: no-repeat;
-        transform-origin: bottom;
-        opacity: 0;
-    } 
 }
 
 .header_home, .main_home, .footer_home {
