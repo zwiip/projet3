@@ -9,6 +9,7 @@
         color: white;
         position: relative;
         z-index: 1;
+        cursor: pointer;
         @include btn($btn-margin: $margin-btn-gradient, $btn-height: $btn-gradient);
         &:hover {
             @include hover;
@@ -93,6 +94,9 @@
     &-card {
         @include btn($btn-margin: $margin-btn-card, $btn-height: $btn-card);
         border-radius: 20px;
+        &:hover {
+            @include hover;
+        }
         @include tablet {
             margin: 10px;
         }
@@ -151,6 +155,16 @@
         position: relative;
         overflow: hidden;
         display: flex;
+        cursor: pointer;
+        @include tablet {
+            margin: 8px;
+        }
+        @include desktop {
+            margin: 8px;
+        }
+        &:hover {
+            @include hover;
+        }
         &_container {
             width: 100%;
             height: 100%;
@@ -163,7 +177,6 @@
             height: 100%;
             width: 18%;
             background-color: $color-tertiary;
-            border-radius: 0 20px 20px 0;
             display: flex;
             justify-content: center;
             align-items: center;
