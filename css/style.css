@@ -82,12 +82,15 @@ li {
 .btn-gradient {
   border-radius: 50px;
   height: 50px;
-  padding-left: 7%;
-  padding-right: 7%;
+  padding: 10px;
+  width: 250px;
   background: linear-gradient(175deg, #FF79DA, #9356DC);
   color: white;
   position: relative;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
   border: none;
   margin-bottom: 10px;
@@ -245,7 +248,7 @@ li {
 .btn_choice {
   border: none;
   margin-bottom: 14px;
-  height: btn-select;
+  height: 75px;
   box-shadow: 6px 4px 10px lightgray;
   background-color: white;
   height: 85px;
@@ -658,7 +661,7 @@ main {
 }
 .menus_title h2:first-of-type {
   padding-top: 0;
-  margin-top: 10;
+  margin-top: 10px;
 }
 .menus_title_line {
   background-color: #99E2D0;

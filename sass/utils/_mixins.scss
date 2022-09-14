@@ -1,4 +1,4 @@
-@mixin btn($btn-margin: $margin-btn-select, $btn-height: btn-select) {
+@mixin btn($btn-margin: $margin-btn-select, $btn-height: $btn-select) {
     border: none;
     margin-bottom: $btn-margin;
     height: $btn-height;
