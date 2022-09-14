@@ -100,11 +100,7 @@
         &:hover {
             @include hover;
         }
-        @include tablet {
-            margin: 10px;
-        }
         @include desktop {
-            margin: 10px;
             max-height: 240px;
         }
         
